@@ -28,7 +28,6 @@ jobs:
           app_location: "/"
           api_location: ""
           output_location: "out"
-          app_build_command: "npx next build --webpack && npx next export"
   close:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
